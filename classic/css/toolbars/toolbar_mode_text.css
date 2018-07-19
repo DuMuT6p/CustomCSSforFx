@@ -1,8 +1,4 @@
-/*AGENT_SHEET*/
-
-/* Firefox 57+ userChrome.css tweaks ****************************************************/
-/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **/
-/* by Aris (aris-addons@gmx.net)*********************************************************/
+/* Firefox Quantum userChrome.css tweaks ************************************************/
 /* Github: https://github.com/aris-t2/customcssforfx ************************************/
 /****************************************************************************************/
 
@@ -26,4 +22,16 @@ toolbar:not(#nav-bar):not(#TabsToolbar) .toolbarbutton-1:not([type="menu-button"
 
 #PlacesToolbarItems .bookmark-item .toolbarbutton-icon {
   visibility: collapse !important;
+}
+
+/* menubar corrections */
+#main-window #toolbar-menubar toolbaritem .toolbarbutton-1 .toolbarbutton-text,
+#main-window #toolbar-menubar .toolbarbutton-1:not([type="menu-button"]) .toolbarbutton-text,
+#main-window #toolbar-menubar .toolbarbutton-1[type="menu-button"] toolbarbutton .toolbarbutton-text{
+  margin-top: -1px !important;
+}
+
+/* tweak for bookmarks_menu_button_localized_label_on_bookmarks_toolbar.css */
+#main-window #navigator-toolbox #PersonalToolbar #bookmarks-menu-button::after{
+  margin-top: -4px !important;
 }
