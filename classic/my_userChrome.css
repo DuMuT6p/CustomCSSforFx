@@ -3,14 +3,17 @@
 /************************************************************************************************/
 
 /* other button settings ************************************************************************/
-@import url(./css/buttons/forward_button_hide_when_disabled.css); /**/
+@import "./css/buttons/whatnew_button_always_hidden.css"; /**/
+@import "./css/buttons/forward_button_hide_when_disabled.css"; /**/
 
 /* application/hamburger button hidden - disable all other appbutton options when using this ****/
-@import url(./css/buttons/appbutton_hidden.css); /**/
+@import "./css/appbutton/appbutton_hidden.css"; /**/
 
 /* page action button (three dots) / separator **************************************************/
 /* @import url(./css/locationbar/pageaction_separator_in_location_bar_hidden.css); /**/
-@import url(./css/locationbar/pageaction_button_in_location_bar_hidden.css); /**/
+@import "./css/locationbar/pageaction_button_in_location_bar_hidden.css"; /**/
 
-/* star button **********************************************************************************/
-/* Changed @import url(./css/locationbar/starbutton_in_location_bar_hidden.css); /**/
+/* star button / bookmarks star *****************************************************************/
+@import "./css/locationbar/starbutton_is_last_pageaction_button.css"; /**/
+/* @import "./css/locationbar/starbutton_popup_preview_image_hidden.css"; /**/
+/* @import "./css/locationbar/starbutton_in_location_bar_hidden.css"; /**/

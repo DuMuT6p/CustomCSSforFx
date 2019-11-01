@@ -8,19 +8,18 @@
 }
 
 /* tab top border roundness */
-#TabsToolbar .tabs-newtab-button,
 #TabsToolbar .tabbrowser-tab,
 #TabsToolbar .tabbrowser-tab .tab-stack,
 #TabsToolbar .tabbrowser-tab .tab-background,
 #TabsToolbar .tabbrowser-tab .tab-content {
   border-top-left-radius: var(--default_tab_border_roundness) !important;
   border-top-right-radius: var(--default_tab_border_roundness) !important;
+  overflow: hidden;
 }
 
-/* tab line */
-.tab-line {
-  margin-left: calc( var(--default_tab_border_roundness) - 3px ) !important;
-  margin-right: calc( var(--default_tab_border_roundness) - 3px ) !important;
+#TabsToolbar :-moz-any(.tabs-newtab-button,#tabs-newtab-button){
+  border-top-left-radius: var(--default_tab_border_roundness) !important;
+  border-top-right-radius: var(--default_tab_border_roundness) !important;
 }
 
 /* hide tab separators */
