@@ -3,12 +3,8 @@
 /****************************************************************************************/
 
 
-#main-window[tabsintitlebar] #nav-bar #PanelUI-button {
-  position: relative !important;
-  margin-top: -32px !important;
-  margin-bottom: 40px !important;
-}
-
-#main-window[tabsintitlebar] #nav-bar-customization-target {
-  -moz-margin-start: -37px !important;
+#nav-bar:-moz-lwtheme #urlbar ::-moz-selection,
+#nav-bar:not(:-moz-lwtheme) #urlbar ::-moz-selection {
+  background-color: HighlightText !important;
+  color: Highlight !important;
 }
