@@ -1,0 +1,43 @@
+/* Firefox Quantum userChrome.css tweaks ********************************************************/
+/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **********/
+/* Github: https://github.com/aris-t2/customcssforfx ********************************************/
+/************************************************************************************************/
+
+/************************************************************************************************/
+/* Custom CSS for Firefox 60+ (pre-configured for Firefox 75+) **********************************/
+/* version 3.1.8 ********************************************************************************/
+/************************************************************************************************/
+
+/*************************************************************************************************
+
+/* other button settings ************************************************************************/
+@import "./css/buttons/whatnew_button_always_hidden.css"; /**/
+@import "./css/buttons/forward_button_hide_when_disabled.css"; /**/
+
+/* application/hamburger button hidden - disable all other appbutton options when using this ****/
+@import "./css/appbutton/appbutton_hidden.css"; /**/
+
+/* page action button (three dots) / separator **************************************************/
+/* @import "./css/locationbar/pageaction_separator_in_location_bar_hidden.css"; /**/
+@import "./css/locationbar/pageaction_button_in_location_bar_hidden.css"; /**/
+
+/* star button / bookmarks star *****************************************************************/
+@import "./css/locationbar/starbutton_is_last_pageaction_button.css"; /**/
+/* @import "./css/locationbar/starbutton_popup_preview_image_hidden.css"; /**/
+/* @import "./css/locationbar/starbutton_in_location_bar_hidden.css"; /*Created by me */   
+
+/* general popup/results settings ***************************************************************/
+@import "./css/locationbar/ac_popup_result_font_size.css"; /**/
+/* @import "./css/locationbar/ac_popup_firefox_background_logo.css"; /**/
+
+ /************************************************************************************************/
+/* MEGABAR - settings for 'megabar' & 'megabar popup' (active in Firefox 75+ by default) ********/
+/* about:config > browser.urlbar.update1 > true (pref present in Firefox 72-76) *****************/
+/************************************************************************************************/
+@import "./css/locationbar/megabar_expanding_breakout_disabled.css"; /**/
+
+/* popup content order/appearance - [only use one at a time] ************************************/
+@import "./css/locationbar/ac_popup_megabar_title_and_url_50percent_width.css"; /**/
+
+/* result menuitem settings/appearance **********************************************************/
+@import "./css/locationbar/ac_popup_megabar_compact_results.css"; /**/
